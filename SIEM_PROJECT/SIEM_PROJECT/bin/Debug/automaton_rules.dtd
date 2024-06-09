@@ -1,0 +1,18 @@
+<!ELEMENT CFG (Variables, Terminals, StartVariable, DailyLimit, ProductionRules)>
+<!ELEMENT Variables (Variable+)>
+<!ELEMENT Variable (#PCDATA)>
+
+<!ELEMENT Terminals (Terminal+)>
+<!ELEMENT Terminal (Values)>
+<!ATTLIST Terminal name CDATA #REQUIRED>
+<!ELEMENT Values (#PCDATA)>
+
+<!ELEMENT StartVariable (#PCDATA)>
+<!ELEMENT DailyLimit (#PCDATA)>
+
+<!ELEMENT ProductionRules (Production+)>
+<!ELEMENT Production (Left, Condition, Right)>
+<!ELEMENT Left (#PCDATA)>
+<!ELEMENT Condition (Term)>
+<!ELEMENT Right (#PCDATA)>
+<!ELEMENT Term (#PCDATA)>

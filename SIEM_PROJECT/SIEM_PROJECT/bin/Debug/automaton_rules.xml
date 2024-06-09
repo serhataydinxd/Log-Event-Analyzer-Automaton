@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CFG SYSTEM "automaton_rules.dtd">
+<CFG>
+    <Variables>
+        <Variable>As1</Variable>
+        <Variable>As2</Variable>
+        <Variable>As3</Variable>
+        <Variable>As4</Variable>
+        <Variable>As5</Variable>
+    </Variables>
+    <Terminals>
+        <Terminal name="I">
+            <Values>1,6,8,10,12,16,18,19,20,24,25,27,30,32,34,35,36,37,41,42,43,44,51,55,98,105,107,130,131,153,158,172,187,238,267,521,1025,1074,1282,4000,6005,6009,6013,7001,7002,7003,7005,7010,7011,7012,7017,7021,7025,7026,7027,7036,7040,8000,10001,16962,16977,16983,50036,50103,51046</Values>
+        </Terminal>
+        <Terminal name="C">
+            <Values>4625</Values>
+        </Terminal>
+        <Terminal name="W">
+            <Values>14,134,1014,4003,6062,10002,10016</Values>
+        </Terminal>
+        <Terminal name="E">
+            <Values>29,1796,2505,4307,4311,6008,7000,7023,7031,7034,10005,36882</Values>
+        </Terminal>
+    </Terminals>
+    <StartVariable>As1</StartVariable>
+    <DailyLimit>3</DailyLimit>
+    <ProductionRules>
+        <Production>
+            <Left>As1</Left>
+            <Condition>
+                <Term>I</Term>
+            </Condition>
+            <Right>As2</Right>
+        </Production>
+
+        <Production>
+            <Left>As1</Left>
+            <Condition>
+                <Term>C</Term>
+            </Condition>
+            <Right>As3</Right>
+        </Production>
+
+        <Production>
+            <Left>As1</Left>
+            <Condition>
+                <Term>W</Term>
+            </Condition>
+            <Right>As4</Right>
+        </Production>
+
+        <Production>
+            <Left>As1</Left>
+            <Condition>
+                <Term>E</Term>
+            </Condition>
+            <Right>As5</Right>
+        </Production>
+
+        <Production>
+            <Left>As2</Left>
+            <Condition>
+                <Term>I</Term>
+            </Condition>
+            <Right>As2</Right>
+        </Production>
+
+        <Production>
+            <Left>As2</Left>
+            <Condition>
+                <Term>C</Term>
+            </Condition>
+            <Right>As3</Right>
+        </Production>
+
+        <Production>
+            <Left>As2</Left>
+            <Condition>
+                <Term>W</Term>
+            </Condition>
+            <Right>As4</Right>
+        </Production>
+
+        <Production>
+            <Left>As2</Left>
+            <Condition>
+                <Term>E</Term>
+            </Condition>
+            <Right>As5</Right>
+        </Production>
+
+        <Production>
+            <Left>As3</Left>
+            <Condition>
+                <Term>I</Term>
+            </Condition>
+            <Right>As2</Right>
+        </Production>
+
+        <Production>
+            <Left>As3</Left>
+            <Condition>
+                <Term>C</Term>
+            </Condition>
+            <Right>As3</Right>
+        </Production>
+
+        <Production>
+            <Left>As3</Left>
+            <Condition>
+                <Term>W</Term>
+            </Condition>
+            <Right>As4</Right>
+        </Production>
+
+        <Production>
+            <Left>As3</Left>
+            <Condition>
+                <Term>E</Term>
+            </Condition>
+            <Right>As5</Right>
+        </Production>
+
+        <Production>
+            <Left>As4</Left>
+            <Condition>
+                <Term>I</Term>
+            </Condition>
+            <Right>As2</Right>
+        </Production>
+
+        <Production>
+            <Left>As4</Left>
+            <Condition>
+                <Term>C</Term>
+            </Condition>
+            <Right>As3</Right>
+        </Production>
+
+        <Production>
+            <Left>As4</Left>
+            <Condition>
+                <Term>W</Term>
+            </Condition>
+            <Right>As4</Right>
+        </Production>
+
+        <Production>
+            <Left>As4</Left>
+            <Condition>
+                <Term>E</Term>
+            </Condition>
+            <Right>As5</Right>
+        </Production>
+
+        <Production>
+            <Left>As5</Left>
+            <Condition>
+                <Term>I</Term>
+            </Condition>
+            <Right>As2</Right>
+        </Production>
+
+        <Production>
+            <Left>As5</Left>
+            <Condition>
+                <Term>C</Term>
+            </Condition>
+            <Right>As3</Right>
+        </Production>
+
+        <Production>
+            <Left>As5</Left>
+            <Condition>
+                <Term>W</Term>
+            </Condition>
+            <Right>As4</Right>
+        </Production>
+        
+        <Production>
+            <Left>As5</Left>
+            <Condition>
+                <Term>E</Term>
+            </Condition>
+            <Right>As5</Right>
+        </Production>
+    </ProductionRules>
+</CFG>
