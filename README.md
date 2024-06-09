@@ -11,7 +11,7 @@ an XML file containing:
 The app,
 - uses your XML file as a guide and the event ids of your xlsx log file to transition from one state to another which are in my case Error, Information, Warning and Critical. 
 - outputs every state transition and notes the computer name when a Critical value is sent by them. I used 4625 which is the log for an incorrect password, but you can use any id or ids you want.
-- bans the computer from sending any more logs if it reaches the daily critical log limit.
+- bans the computer from sending any more logs if it reaches the daily critical log limit. Ban list is saved as a txt file after each run so on the next run it will still not accept any logs from banned computers.
 - writes a report of critical logs' time and from which computer they came from. The report also states when a computer gets banned and when a banned computer tries to send a log.
 
 # Notes
